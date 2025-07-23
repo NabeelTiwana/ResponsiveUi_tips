@@ -3,9 +3,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:responsive_approch/responsive/ResponsiveHelper.dart';
 import 'package:flutter/material.dart';
 
+import '../app_text_style.dart';
+
 extension ResponsiveTextStyles on BuildContext {
   TextStyle get responsiveDisplayLarge => AppTextStyle.displayLarge.copyWith(
-    fontsize: ResponsiveHelper.getFontSize(
+    fontSize: ResponsiveHelper.getFontSize(
       this,
       mobile: 40,
       tablet: 48,
@@ -42,7 +44,7 @@ extension ResponsiveTextStyles on BuildContext {
   );
 
   TextStyle get responsiveBodyLarge => AppTextStyle.bodyLarge.copyWith(
-    fontSIze: ResponsiveHelper.getFontSize(
+    fontSize: ResponsiveHelper.getFontSize(
       this,
       mobile: 14,
       tablet: 16,
